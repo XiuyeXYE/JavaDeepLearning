@@ -20,6 +20,7 @@ public class Test2 {
 		l.sort((a,b)-> a.compareToIgnoreCase(b));
 		l.forEach((e)->System.out.println(e));
 		System.out.println(l);
+		l.stream();
 
 	}
 
