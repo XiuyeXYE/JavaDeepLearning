@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Premain-Class: com.xiuye.agent.Agent1
+Agent-Class: com.xiuye.agent.Agent1
+
