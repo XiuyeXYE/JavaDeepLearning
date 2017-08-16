@@ -11,7 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ControllerApplication extends Application {
+public class Controller1Application extends Application {
 
 	private String resPath(String file){
 		return this.getClass().getResource(file).toString();
@@ -19,7 +19,7 @@ public class ControllerApplication extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(this.getClass().getResource("controller.fxml"));
+		Parent root = FXMLLoader.load(this.getClass().getResource("controller1.fxml"));
 		primaryStage.setTitle("controller event");
 		Scene s = new Scene(root);
 		ObservableList<String> styleSheets = s.getStylesheets();

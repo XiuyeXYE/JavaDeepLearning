@@ -11,7 +11,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 
 
-public class DemoController implements Initializable{
+public class Controller1 implements Initializable{
 	@FXML
 	private Button btn;
 
