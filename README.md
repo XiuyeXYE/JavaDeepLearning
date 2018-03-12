@@ -1,2 +1,3 @@
-# JavaAPILearning
-Learning Java API and Learing From Java API
+# JavaDeepLearning
+Learning Java Deeply
+

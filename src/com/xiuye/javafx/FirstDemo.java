@@ -9,6 +9,7 @@ public class FirstDemo extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		primaryStage.setTitle("JavaFX窗口");
 		BorderPane root = new BorderPane();
 		Scene s = new Scene(root);
 		primaryStage.setScene(s);

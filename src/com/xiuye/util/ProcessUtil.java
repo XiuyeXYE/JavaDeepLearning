@@ -13,6 +13,7 @@ public class ProcessUtil {
 	public static void attachJar(String jarFile,String args){
 		String name = ManagementFactory.getRuntimeMXBean().getName();
 		String currentPid = name.split("@")[0];
+//		System.out.println(name);
 		VirtualMachine vm = null;
 		try {
 			vm = VirtualMachine.attach(currentPid);
