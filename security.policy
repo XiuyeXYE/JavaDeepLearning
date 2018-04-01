@@ -1,0 +1,8 @@
+grant {
+	permission java.lang.RuntimePermission "getProtectionDomain";
+	permission java.util.PropertyPermission "java.security.manager", "read";
+	permission java.util.PropertyPermission "java.security.manager", "write";
+	permission java.util.PropertyPermission "java.security.policy", "write";
+	permission java.util.PropertyPermission "java.security.policy", "read";
+};// 这里也需要";"!
+
