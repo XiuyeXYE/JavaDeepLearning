@@ -1,4 +1,5 @@
 grant {
+	permission java.io.FilePermission "com","read";
 	permission java.lang.RuntimePermission "getProtectionDomain";
 	permission java.util.PropertyPermission "java.security.manager", "read";
 	permission java.util.PropertyPermission "java.security.manager", "write";
