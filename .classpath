@@ -9,5 +9,12 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="F:/ThirdSDK/mongo-java-driver-3.6.1.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/OpenCVImshow"/>
+	<classpathentry kind="lib" path="lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="lib/ecj-4.6.3.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-embed-core.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-embed-el.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-embed-jasper.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-embed-websocket.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
