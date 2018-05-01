@@ -2,7 +2,6 @@ package com.xiuye.opencv;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import org.opencv.core.Core;
 import org.opencv.core.Core.MinMaxLocResult;
