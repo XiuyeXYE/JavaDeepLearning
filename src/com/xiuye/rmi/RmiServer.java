@@ -13,7 +13,7 @@ public class RmiServer {
 
 			DemoService ds = new DemoServiceImpl();
 			LocateRegistry.createRegistry(9999);
-			Naming.rebind("rmi://localhost:9999/ds", ds);
+			Naming.rebind("rmi://localhost:9999/ds", ds); 
 			log("binded ip with obj");
 		} catch (RemoteException e) {
 			e.printStackTrace();
