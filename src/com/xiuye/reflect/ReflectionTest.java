@@ -1,5 +1,10 @@
 package com.xiuye.reflect;
 
+import java.security.AccessController;
+import java.security.PrivilegedAction;
+
+import com.xiuye.util.LogUtil;
+
 import sun.reflect.CallerSensitive;
 import sun.reflect.Reflection;
 
@@ -8,11 +13,11 @@ public class ReflectionTest {
 
 		// f();
 		// System.out.println(Reflection.getCallerClass());
-//		h();
+		// h();
 		A.f();
 	}
 
-	public static void h(){
+	public static void h() {
 		f();
 	}
 
@@ -20,13 +25,16 @@ public class ReflectionTest {
 		System.out.println(clazz);
 	}
 
-
 	public static void f() {
-		g(Reflection.getCallerClass());
+		LogUtil.log(AccessController.doPrivileged((PrivilegedAction<String>) () -> {
+			g(Reflection.getCallerClass());
+			return "OK";
+		}));
 	}
-	static class A{
+
+	static class A {
 		@CallerSensitive
-		public static void f(){
+		public static void f() {
 			ReflectionTest.f();
 		}
 	}
